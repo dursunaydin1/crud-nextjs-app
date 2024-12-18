@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Todo List Uygulaması - Next.js, Prisma ve MongoDB ile
 
-## Getting Started
+Bu, **Next.js**, **Prisma** ve **MongoDB** kullanılarak oluşturulmuş bir **Todo List Uygulaması**'dır. Uygulama, kullanıcıların görev eklemesine, düzenlemesine, silmesine ve tamamlanmış olarak işaretlemesine olanak tanır.
 
-First, run the development server:
+### Özellikler
+
+- **Görevleri Listeleme**: Kullanıcılar mevcut görevlerini görüntüleyebilir.
+- **Yeni Görev Ekleme**: Yeni bir görev eklenebilir.
+- **Görev Düzenleme**: Var olan görevlerin başlığı değiştirilebilir.
+- **Görev Silme**: Gereksiz görevler kaldırılabilir.
+- **Responsive Tasarım**: Mobil cihazlar ve masaüstü cihazlar için uyumludur.
+
+## Kullanılan Teknolojiler
+
+- **Next.js**: React tabanlı modern web uygulamaları geliştirme framework'ü.
+- **Prisma**: ORM aracı olarak kullanıldı.
+- **MongoDB**: Veritabanı olarak tercih edildi.
+- **Axios**: API çağrıları için.
+- **React Icons**: İkonlar için kullanıldı.
+- **Tailwind CSS**: Kullanıcı arayüzünü şekillendirmek için.
+
+---
+
+## Kurulum
+
+### 1. Repositoriyi Klonlayın
+
+```bash
+git clone https://github.com/dursunaydin1/crud-nextjs-app.git
+```
+
+### 2. Bağımlılıkları Yükleyin
+
+```bash
+cd crud-next-app
+npm install
+```
+
+### 3. MongoDb'yi Ayarlayın
+
+MongoDB bağlantınızı güvenli bir şekilde .env dosyasına ekleyin:
+
+```bash
+DATABASE_URL="mongodb+srv://<your_mongo_user>:<your_mongo_password>@todo.kkcvu.mongodb.net/todo?retryWrites=true&w=majority"
+```
+
+### 4. Prisma'yi Ayarlayın
+
+```bash
+DATABASE_URL="mongodb+srv://<your_mongo_user>:<your_mongo_password>@cluster0.mongodb.net/todo_db?retryWrites=true&w=majority"
+```
+
+### 5. Projeyi Çalıştırma
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Proje Demo
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Projenin canlı demo sürümüne aşağıdaki bağlantıdan ulaşabilirsiniz:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- [Demo Linki - Vercel](https://crud-nextjs-app.vercel.app/)
 
-## Learn More
+Aşağıda uygulamanın kullanımını gösteren bir GIF yer almaktadır:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+![Proje Demo GIF](./app/assets/screen.gif)
