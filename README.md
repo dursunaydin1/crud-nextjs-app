@@ -2,7 +2,7 @@
 
 Bu, **Next.js**, **Prisma** ve **MongoDB** kullanılarak oluşturulmuş bir **Todo List Uygulaması**'dır. Uygulama, kullanıcıların görev eklemesine, düzenlemesine, silmesine ve tamamlanmış olarak işaretlemesine olanak tanır.
 
-### Özellikler
+## Özellikler
 
 - **Görevleri Listeleme**: Kullanıcılar mevcut görevlerini görüntüleyebilir.
 - **Yeni Görev Ekleme**: Yeni bir görev eklenebilir.
@@ -60,7 +60,7 @@ npm run dev
 
 Projenin canlı demo sürümüne aşağıdaki bağlantıdan ulaşabilirsiniz:
 
-- [Demo Linki - Vercel](https://crud-nextjs-app.vercel.app/)
+- [Demo Linki - Vercel](https://crud-nextjs-app-zlsv.vercel.app/)
 
 Aşağıda uygulamanın kullanımını gösteren bir GIF yer almaktadır:
 
